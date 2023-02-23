@@ -1,0 +1,83 @@
+*
+{
+    padding: 0;
+    margin:0;
+}
+
+body
+{
+    background: url(image/banner.png);
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    position:relative;
+}
+.menu-bar{
+    background-color: rgb(0,100,0);
+    text-align: center;
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style-type: none;
+    color:white;
+
+
+}
+.menu-bar ul li{
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 25px;
+
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+.active{
+    background-color:green;
+    padding: 10px 16px;
+
+}
+
+.menu-bar ul li a:hover:not(.active)
+
+{
+    background-color:green;
+    padding: 13px;
+}
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display:block ;
+    position: absolute;
+    background-color:green ;
+    margin-top: 40px;
+    margin-left: -40px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1  ul{
+    display: block;
+    margin-top: 20;
+        
+}
+.menu-bar ul li:hover .sub-menu-1  ul li{
+    width:150px;
+    display: block;
+    padding:8px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius:0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1  ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1  ul li:last-child a:hover{
+    color:blue;
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+        width: 200px;
+        background-color: brown;
+        
+        
+        }
+        li{
+            text-align: center;
+            border:1px solid black;
+            
+        }
+        
+    
+        li a{
+            color:white;
+            padding:8px 16px ;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            
+            
+
+        }
+        li a.active{
+            background-color: yellow;
+            color: white;
+            padding: 10px;
+        }
+        li a:hover:not(.active){
+            background-color: red;
+        
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active"href="defoult.asp">Home</a></li>
+        <li><a href="about.asp">About</a></li>
+        <li><a href="contect.asp">Contect</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="service.asp">Home</a></li>
+        <li><a href="course.asp">Course</a></li>
+    </ul>
+    
+</body>
+</html>

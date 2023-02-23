@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background-color: black;
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            overflow:hidden;
+        }
+        li {
+            display: inline-block;
+            
+        }
+        li a, .dropbtn{
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            
+            font-size: 25px;;
+display: inline-block;
+
+        }
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: red;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            background-color: blanchedalmond;
+            z-index: 1;
+            display: none;
+            position: absolute;
+            min-width: 160px;
+
+        }
+        .dropdown-content a{
+            background-color: cornflowerblue;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 14px 16px;
+        }
+        .dropdown-content a:hover{
+            background-color: darkblue;
+
+        }
+        dropdown:hover  .dropdown-content{
+            display: block;
+        }
+
+
+
+
+        </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown"><a href="#news" class="dropbtn">news</a>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+        </div></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Image</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+    
+</body>
+</html>
